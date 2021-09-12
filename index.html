@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <form action="enviar.node">
+        
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome <input type="text" id="nome"> </label> <br>
+            <label for="sobrenome">Sobrenome <input type="text" id="sobrenome"> </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label> Experiência
+                <select name="experiencia">
+                    <option value="junior">Junior</option>
+                    <option value="pleno">Pleno</option>
+                    <option value="senior">Senior</option>
+               </select>
+               <br>
+            </label>
+
+            <label> Área de atuação na faculdade
+                <input type="radio" name="cargo" value="gerencia"> Gerência
+                <input type="radio" name="cargo" value="financeiro"> Financeiro
+                <input type="radio" name="cargo" value="recepcao"> Recepção
+                <input type="radio" name="cargo" value="outros"> Outros
+                <br> 
+                <br>
+                <br>
+            </label>
+
+            <label> Área de interesse na empresa
+                <input type="checkbox" name="area" id="desenvolvedora(o)"> Desenvolvedora(o)
+                <input type="checkbox" name="area" id="computacao"> Computacao
+                <input type="checkbox" name="area" id="financia"> Financia
+                <input type="checkbox" name="area" id="outros"> Outros
+                <br>
+                <br>
+            </label>
+
+            <label> Fale sobre você
+                <textarea name="textoArea" id="textoArea"></textarea>
+            </label>
+        </fieldset>
+        <br>
+
+        <input type="button" value="Enviar">
+        <input type="reset" value="Limpar">
+
+    </form>
+
+</body>
+</html>
